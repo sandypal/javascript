@@ -63,8 +63,86 @@ function createMultiplier(num){
 
 //Rest Params
 
-function sumAll(...nums){
-    return nums.reduce((acc, curr) => acc + curr, 0);
-}
+// function sumAll(...nums){
+//     return nums.reduce((acc, curr) => acc + curr, 0);
+// }
 
-console.log(sumAll(1,2,3,4,5,6,7,8));
+// console.log(sumAll(1,2,3,4,5,6,7,8));
+
+
+//Array Destructuring
+
+// const  cricketTeams = ['India', 'South Africa', 'England'];
+
+// const [winner, loser] = cricketTeams;
+
+// console.log(winner);
+// console.log(loser);
+
+
+//Object Destructuring
+
+// const userData = {
+//     name: "John Doe",
+//     age: 30,
+//     address: {
+//         street: "123 Main St",
+//         city: "New York",
+//         state: "NY"
+//     },
+//     email: "john@gmail.com",
+//     phone: "123-456-7890",
+//     hobbies: ["reading", "painting", "cooking"],
+//     isActive: true
+// }
+
+// const { name, age, address: { street, city }, email, phone, hobbies, isActive } = userData;
+
+// console.log(name);
+// console.log(age);
+// console.log(street);
+
+// //Giving Custom name to variables
+// const {name:fullName} =userData;
+
+// Destructuring Parameters
+
+// const movies = [
+//     {
+//         title: "Inception",
+//         director: "Christopher Nolan",
+//         year: 2010,
+//         genre: "Sci-Fi",
+//         score: 8.8
+//     },
+//     {
+//         title: "The Godfather",
+//         director: "Francis Ford Coppola",
+//         year: 1972,
+//         genre: "Crime",
+//         score: 9.2
+//     },
+//     {
+//         title: "Pulp Fiction",
+//         director: "Quentin Tarantino",
+//         year: 1994,
+//         genre: "Crime",
+//         score: 8.9
+//     },
+//     {
+//         title: "The Shawshank Redemption",
+//         director: "Frank Darabont",
+//         year: 1994,
+//         genre: "Drama",
+//         score: 9.3
+//     },
+//     {
+//         title: "The Dark Knight",
+//         director: "Christopher Nolan",
+//         year: 2008,
+//         genre: "Action",
+//         score: 9.0
+//     }
+// ];
+
+// const hitmovies = movies.filter(({score}) => score >=9 );  
