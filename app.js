@@ -1,12 +1,12 @@
 // Description: Create a function called createMultiplier that takes a number as an argument and returns a new function. The returned function should take another number and multiply it by the first number.
-const multiplyBy2 = createMultiplier(2);
-console.log(multiplyBy2(5)); // Output: 10
+// const multiplyBy2 = createMultiplier(2);
+// console.log(multiplyBy2(5)); // Output: 10
 
-function createMultiplier(num){
-    return function(num2){
-        return num * num2;
-    }
-}
+// function createMultiplier(num){
+//     return function(num2){
+//         return num * num2;
+//     }
+// }
 
 // const multiplyBy2 = createMultiplier(23);
 // console.log(multiplyBy2(4)); // Output: 10
@@ -146,3 +146,45 @@ function createMultiplier(num){
 // ];
 
 // const hitmovies = movies.filter(({score}) => score >=9 );  
+
+// YOUR CODE GOES IN HERE:
+// let spanEle = document.querySelector('span');
+// console.dir(spanEle);
+// spanEle.innerText = 'Disgusting';
+document.addEventListener('DOMContentLoaded', function() {
+// let imgTag = document.querySelector('img');
+// console.dir(imgTag);
+// imgTag.src = 'https://devsprouthosting.com/images/chicken.jpg';
+// imgTag.alt = 'chicken'
+ // Excercise 1
+// let divTag = document.getElementById('container');
+// divTag.style.textAlign = "center";
+// let imgTag = document.querySelector('img');
+// console.dir(imgTag);
+// imgTag.style.width = "150px";
+// imgTag.style.borderRadius = "50%";
+
+// Excercise 2 
+// const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']; //PLEASE DON'T CHANGE THIS LINE!
+
+// //YOUR CODE GOES HERE:
+
+// let spanTags = document.querySelectorAll('span');
+
+// spanTags.forEach((span,index) => {
+//     span.style.color = colors[index];
+// });
+
+// Excercise 3
+
+const liTags = document.querySelectorAll('li');
+
+liTags.forEach((li, index) => {
+    if(li.classList.contains("highlight")){
+        li.style.backgroundColor = '#B10DC9';;
+    }else{
+        li.style.backgroundColor = '#7FDBFF';
+    }
+});
+
+});
